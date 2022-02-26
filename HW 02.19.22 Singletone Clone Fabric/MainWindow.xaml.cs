@@ -24,5 +24,15 @@ namespace HW_02._19._22_Singletone_Clone_Fabric
         {
             InitializeComponent();
         }
+
+        private void Create_Click(object sender, RoutedEventArgs e)
+        {
+            IWarrior warrior;
+            CloneFabric cloneFabric = new CloneFabric();
+            if (Rb1.IsChecked == true)
+                warrior = cloneFabric.Clone(1);
+            if (Rb2.IsChecked == true)
+                warrior = cloneFabric.Clone(2);
+        }
     }
 }

@@ -4,6 +4,7 @@ using System.Runtime.Serialization;
 
 namespace CloneFabricLibrary
 {
+    [Serializable]
     public class CloneWarior:IWarrior
     {
         public string Name { get; set; }

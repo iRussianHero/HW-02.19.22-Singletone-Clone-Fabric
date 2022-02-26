@@ -7,6 +7,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+
+        <TextBox HorizontalAlignment="Left" Height="370" Margin="303,25,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="465"/>
+        <Label Content="Choose type of Clone Warrior:" HorizontalAlignment="Left" Margin="26,100,0,0" VerticalAlignment="Top" FontSize="16" Width="243" Height="50" FontWeight="Bold"/>
+        <RadioButton x:Name="Rb1" Content="Warrior" HorizontalAlignment="Left" Margin="118,189,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="Rb2" Content="Bowman" HorizontalAlignment="Left" Margin="118,217,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="Create" Content="Create" HorizontalAlignment="Left" Margin="84,291,0,0" VerticalAlignment="Top" Height="60" Width="126" Click="Create_Click"/>
+
     </Grid>
 </Window>
