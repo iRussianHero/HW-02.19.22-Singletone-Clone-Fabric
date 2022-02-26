@@ -4,10 +4,12 @@ using System.Runtime.Serialization;
 
 namespace CloneFabricLibrary
 {
-    public class CloneWarior
+    public class CloneWarior:IWarrior
     {
         public string Name { get; set; }
         public string ClassType { get; set; }
+
+        int count = 0;
 
         public CloneWarior(string name, string classType)
         {
@@ -27,9 +29,10 @@ namespace CloneFabricLibrary
             clone=binaryFormatter.Deserialize(memoryStream);
             return (CloneWarior)clone;
         }
-        public string GetInfo()
+        public string Show()
         {
-            return ($"Name: {Name}, Class - {ClassType}");
+            ++count;
+            return ($"{count}) Name: {Name}, Class - {ClassType}");
         }
     }
 }
