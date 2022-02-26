@@ -33,6 +33,7 @@ namespace HW_02._19._22_Singletone_Clone_Fabric
                 warrior = cloneFabric.Clone(1);
             if (Rb2.IsChecked == true)
                 warrior = cloneFabric.Clone(2);
+            MessageBox.Show(warrior.Show());
         }
     }
 }
